@@ -28,8 +28,8 @@ public class PlayerInfoWindowController : BaseWindowController {
     public void UpdateUI()
     {
         _playerInfoWindowPresenter.HealthPointsLabel.SetText("Health : " + _playerModel.HealthPoints);
-        _playerInfoWindowPresenter.DamagePointsLabel.SetText("Health : " + _playerModel.DamagePoints);
-        _playerInfoWindowPresenter.ArmorPointsLabel.SetText("Health : " + _playerModel.ArmorPoints);
+        _playerInfoWindowPresenter.DamagePointsLabel.SetText("Damage : " + _playerModel.DamagePoints);
+        _playerInfoWindowPresenter.ArmorPointsLabel.SetText("Armor : " + _playerModel.ArmorPoints);
     }
 
     public void OnPlayerPropertiesChanged(object sender, EventArgs e)
